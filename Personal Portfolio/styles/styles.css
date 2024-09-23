@@ -1,0 +1,377 @@
+.nav,
+.nav-link,
+.parrafo-fin {
+  padding: 1rem
+}
+
+.seccion-article,
+body,
+span {
+  line-height: 2rem
+}
+
+.form label .input+span,
+.form label .input01+span {
+  left: 10px;
+  color: grey;
+  cursor: text;
+  transition: .3s;
+  position: absolute
+}
+
+*,
+.fancy {
+  outline: 0
+}
+
+.fancy,
+.form,
+.form label {
+  position: relative
+}
+
+*,
+.fancy,
+.fancy .text,
+a {
+  text-decoration: none
+}
+
+:root {
+  --fuente-principal: "Protest Guerrilla", sans-serif
+}
+
+li {
+  list-style-type: none
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit
+}
+
+.fancy,
+html {
+  box-sizing: border-box
+}
+
+body {
+  font-size: 1rem
+}
+
+span {
+  color: gray;
+  display: block
+}
+
+html {
+  font-size: 62, 5%
+}
+
+h1,
+h2 {
+  font-family: var(--fuente-principal)
+}
+
+h1 {
+  font-size: 2.3rem
+}
+
+h2 {
+  font-size: 2rem
+}
+
+.header {
+  display: flex;
+  justify-content: space-between
+}
+
+.nombre {
+  margin: 1rem 2rem
+}
+
+.area,
+.footer,
+.titulo,
+.ul-articles {
+  text-align: center
+}
+
+.contenedor {
+  width: min(90%, 120rem);
+  margin: 0 auto
+}
+
+.secciones-first {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem
+}
+
+.encabezado-articles,
+.informacion-personal {
+  justify-content: center
+}
+
+.li-educacion {
+  list-style-type: disc
+}
+
+.seccion-referencias {
+  display: flex;
+  column-gap: 2rem;
+  line-height: 2rem;
+  text-align: justify
+}
+
+.fancy .text,
+.span-bajo {
+  display: block
+}
+
+.parrafo-fin {
+  text-align: justify;
+  margin-top: 2rem;
+  border: 1px solid #000;
+  border-radius: 40px
+}
+
+.project-cont {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center
+}
+
+.contenido-principal-project,
+.footer,
+.footer-project {
+  margin-top: 2rem
+}
+
+.encabezado-articles {
+  display: grid
+}
+
+.flex,
+.form {
+  display: flex
+}
+
+.seccion-article {
+  text-align: center;
+  margin-top: 2rem;
+  justify-content: center
+}
+
+@media(max-width:768px) {
+  .header {
+    flex-direction: column;
+    align-items: center
+  }
+
+  .nombre {
+    text-align: center
+  }
+
+  .secciones-first {
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center
+  }
+
+  .a-exp,
+  .enlace,
+  .li-educacion,
+  .li-experiencia,
+  .p-edu,
+  .p-work,
+  .ul-articles {
+    text-align: justify
+  }
+
+  .seccion-referencias {
+    display: block
+  }
+}
+
+.form {
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px
+}
+
+.message {
+  color: rgba(88, 87, 87, .822);
+  font-size: 14px
+}
+
+.flex {
+  width: 100%;
+  gap: 6px
+}
+
+.form label .input,
+.input01 {
+  width: 100%;
+  padding: 10px 10px 20px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, .397);
+  border-radius: 5px
+}
+
+.form label .input+span {
+  top: 15px;
+  font-size: .9em
+}
+
+.form label .input:placeholder-shown+span {
+  top: 15px;
+  font-size: .9em
+}
+
+.form label .input:focus+span,
+.form label .input:valid+span {
+  top: 30px;
+  font-size: .7em;
+  font-weight: 600
+}
+
+.form label .input:valid+span {
+  color: green
+}
+
+.form label .input01+span {
+  top: 50px;
+  font-size: .9em
+}
+
+.form label .input01:placeholder-shown+span {
+  top: 40px;
+  font-size: .9em
+}
+
+.form label .input01:focus+span,
+.form label .input01:valid+span {
+  top: 50px;
+  font-size: .7em;
+  font-weight: 600
+}
+
+.form label .input01:valid+span {
+  color: green
+}
+
+.fancy {
+  background-color: transparent;
+  border: 2px solid #cacaca;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 390;
+  letter-spacing: 2px;
+  margin: 0;
+  overflow: visible;
+  padding: 8px 30px;
+  text-align: center;
+  text-transform: none;
+  transition: .3s ease-in-out;
+  user-select: none;
+  font-size: 13px
+}
+
+.fancy::before {
+  content: " ";
+  width: 1.7rem;
+  height: 2px;
+  background: #cacaca;
+  top: 50%;
+  left: 1.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform: translateX(230%);
+  transform-origin: center;
+  transition: background .3s linear, width .3s linear
+}
+
+.fancy .text {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  padding-left: 2em;
+  text-align: left;
+  transition: .3s ease-in-out;
+  text-transform: lowercase;
+  color: #818181;
+  transform: translateX(30%)
+}
+
+.fancy .top-key {
+  height: 2px;
+  width: 1.5625rem;
+  top: -2px;
+  left: .625rem;
+  position: absolute;
+  background: #fff;
+  transition: width .5s ease-out, left .3s ease-out
+}
+
+.fancy .bottom-key-1,
+.fancy .bottom-key-2 {
+  height: 2px;
+  bottom: -2px;
+  position: absolute;
+  transition: width .5s ease-out, right .3s ease-out;
+  background: #fff
+}
+
+.fancy .bottom-key-1 {
+  width: 1.5625rem;
+  right: 1.875rem
+}
+
+.fancy .bottom-key-2 {
+  width: .625rem;
+  right: .625rem
+}
+
+.fancy:hover {
+  color: #fff;
+  background: #cacaca
+}
+
+.fancy:hover::before {
+  width: 1.5rem;
+  background: #fff
+}
+
+.fancy:hover .text {
+  color: #fff;
+  padding-left: 1.5em
+}
+
+.fancy:hover .top-key {
+  left: -2px;
+  width: 0
+}
+
+.fancy:hover .bottom-key-1,
+.fancy:hover .bottom-key-2 {
+  right: 0;
+  width: 0
+}
+
+.form {
+  margin: 0 auto
+}
